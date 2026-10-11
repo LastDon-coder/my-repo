@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Send a message to Cosman Tech Academy in Port Harcourt.">
+  <title>Contact | Cosman Tech Academy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="container navbar" aria-label="Main navigation">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">CT</span>
+        <span>Cosman Tech Academy</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="topic.html">CSS Topics</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        <li><a href="login.html" data-auth-link>Log in</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <section class="page-intro section">
+      <div>
+        <p class="eyebrow">Get in touch</p>
+        <h1>Questions? Send us a message.</h1>
+      </div>
+      <div class="intro-note">
+        <p>
+          Ask about courses, schedules, or fees. We reply by email,
+          usually within two working days.
+        </p>
+        <span class="badge">Port Harcourt, Nigeria</span>
+        <p>
+          <a class="text-link" data-whatsapp-link hidden>Chat with us on WhatsApp →</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="section narrow-left" aria-labelledby="contact-title">
+      <form id="contact-form" class="form-panel" novalidate>
+        <h2 id="contact-title">Your message</h2>
+        <div class="form-grid">
+          <div class="field">
+            <label for="contact-name">Name *</label>
+            <input id="contact-name" name="name" type="text" autocomplete="name"
+                   maxlength="120" required>
+          </div>
+          <div class="field">
+            <label for="contact-email">Email *</label>
+            <input id="contact-email" name="email" type="email" autocomplete="email"
+                   maxlength="254" required>
+          </div>
+          <div class="field field-full">
+            <label for="contact-message">Message *</label>
+            <textarea id="contact-message" name="message" rows="6"
+                      maxlength="4000" required></textarea>
+          </div>
+          <input class="honeypot" type="text" name="_gotcha" tabindex="-1"
+                 autocomplete="off" aria-hidden="true">
+        </div>
+        <button class="button form-submit" id="contact-submit" type="submit">Send message</button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite" hidden></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-newsletter">
+      <div>
+        <h2 class="footer-title">Get learning tips and course updates</h2>
+        <p>Short, practical emails. No spam, unsubscribe any time.</p>
+      </div>
+      <form id="newsletter-form" novalidate>
+        <label class="sr-only" for="newsletter-email">Email address</label>
+        <div class="inline-form">
+          <input id="newsletter-email" name="email" type="email"
+                 autocomplete="email" placeholder="you@example.com" required>
+          <input class="honeypot" type="text" name="_gotcha" tabindex="-1"
+                 autocomplete="off" aria-hidden="true">
+          <button class="button" type="submit">Subscribe</button>
+        </div>
+        <p class="form-status" role="status" aria-live="polite" hidden></p>
+      </form>
+    </div>
+    <div class="container footer-inner">
+      <p>© 2026 Cosman Tech Academy</p>
+      <p>
+        <a href="contact.html">Contact</a> ·
+        <a href="privacy.html">Privacy</a> ·
+        Port Harcourt, Nigeria
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script type="module" src="js/site.js"></script>
+  <script type="module" src="js/contact.js"></script>
+</body>
+</html>

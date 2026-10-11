@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+        content="Explore CSS topics, examples, and practical learning tasks.">
+  <title>CSS Topics | Cosman Tech Academy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="container navbar" aria-label="Main navigation">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">CT</span>
+        <span>Cosman Tech Academy</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="topic.html" aria-current="page">CSS Topics</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html" data-auth-link>Log in</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <section class="page-intro section">
+      <div>
+        <p class="eyebrow">The CSS learning hub</p>
+        <h1>Turn plain pages into thoughtful designs.</h1>
+      </div>
+      <div class="intro-note">
+        <p>
+          Explore these proposed learning topics, open the examples,
+          and try each practice task in your own project.
+        </p>
+        <span class="badge">8 topics / Practical examples</span>
+      </div>
+    </section>
+
+    <section class="topics-grid" aria-label="CSS topic cards">
+      <article class="topic-card topic-feature">
+        <div class="card-top">
+          <span class="topic-number">01</span>
+          <span class="badge">Beginner</span>
+        </div>
+        <div class="topic-visual selector-visual" aria-hidden="true">
+          <span>&lt;h1&gt;</span>
+          <span>.card</span>
+          <span>#hero</span>
+        </div>
+        <h2>CSS Selectors</h2>
+        <p>Choose the elements you want to style using names, classes, and IDs.</p>
+        <p class="practice">Practice: style a heading, button, and link.</p>
+        <details>
+          <summary>View example</summary>
+          <pre><code>h1 {
+  color: navy;
+}
+
+.card {
+  padding: 1.5rem;
+}
+
+#hero {
+  background: cream;
+}</code></pre>
+          <p class="small-note">
+            Replace “cream” with a valid color such as #f8f5ed.
+          </p>
+        </details>
+      </article>
+
+      <article class="topic-card">
+        <div class="card-top">
+          <span class="topic-number">02</span>
+          <span class="badge">Beginner</span>
+        </div>
+        <div class="topic-visual color-visual" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+        <h2>Colors &amp; Backgrounds</h2>
+        <p>Develop a visual theme with colors, gradients, and backgrounds.</p>
+        <p class="practice">Practice: design a gradient banner.</p>
+        <details>
+          <summary>View example</summary>
+          <pre><code>.banner {
+  color: #182c38;
+  background: linear-gradient(
+    135deg,
+    #f0c76b,
+    #fff3d4
+  );
+}</code></pre>
+        </details>
+      </article>
+
+      <article class="topic-card">
+        <div class="card-top">
+          <span class="topic-number">03</span>
+          <span class="badge">Beginner</span>
+        </div>
+        <div class="topic-visual type-visual" aria-hidden="true">Aa</div>
+        <h2>Typography</h2>
+        <p>Create clear text hierarchy using size, weight, spacing, and line height.</p>
+        <p class="practice">Practice: style a heading and paragraph.</p>
+        <details>
+          <summary>View example</summary>
+          <pre><code>h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1.1;
+}
+
+p {
+  line-height: 1.7;
+}</code></pre>
+        </details>
+      </article>
+
+      <article class="topic-card">
+        <div class="card-top">
+          <span class="topic-number">04</span>
+          <span class="badge">Beginner</span>
+        </div>
+        <div class="topic-visual" aria-hidden="true">
+          <div class="box-visual"><span>Content</span></div>
+        </div>
+        <h2>The Box Model</h2>
+        <p>Explore the content, padding, border, and margin around an element.</p>
+        <p class="practice">Practice: build a profile card.</p>
+        <details>
+          <summary>View example</summary>
+          <pre><code>.profile {
+  padding: 1.5rem;
+  border: 2px solid #182c38;
+  margin: 1rem;
+  border-radius: 1rem;
+}</code></pre>
+        </details>
+      </article>
+
+      <article class="topic-card" id="flexbox">
+        <div class="card-top">
+          <span class="topic-number">05</span>
+          <span class="badge">Layout</span>
+        </div>
+        <div class="topic-visual flex-visual" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+        <h2>Flexbox</h2>
+        <p>Arrange and align items in a flexible row or column.</p>
+        <p class="practice">Practice: create a wrapping navigation bar.</p>
+        <details>
+          <summary>View example</summary>
+          <pre><code>.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}</code></pre>
+        </details>
+      </article>
+
+      <article class="topic-card topic-feature" id="grid">
+        <div class="card-top">
+          <span class="topic-number">06</span>
+          <span class="badge">Layout</span>
+        </div>
+        <div class="topic-visual" aria-hidden="true">
+          <div class="grid-visual">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+        <h2>CSS Grid</h2>
+        <p>Create rows, columns, and unequal layouts for visually interesting pages.</p>
+        <p class="practice">Practice: build an asymmetrical course gallery.</p>
+        <details>
+          <summary>View example</summary>
+          <pre><code>.layout {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 2fr)
+    minmax(0, 1fr);
+  gap: 1.5rem;
+}</code></pre>
+        </details>
+      </article>
+
+      <article class="topic-card">
+        <div class="card-top">
+          <span class="topic-number">07</span>
+          <span class="badge">Responsive</span>
+        </div>
+        <div class="topic-visual" aria-hidden="true">
+          <div class="device-visual"></div>
+        </div>
+        <h2>Responsive Design</h2>
+        <p>Start with a small-screen layout and enhance it when more space is available.</p>
+        <p class="practice">Practice: turn one column into two.</p>
+        <details>
+          <summary>View example</summary>
+          <pre><code>.layout {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .layout {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+}</code></pre>
+        </details>
+      </article>
+
+      <article class="topic-card" id="animations">
+        <div class="card-top">
+          <span class="topic-number">08</span>
+          <span class="badge">Motion</span>
+        </div>
+        <div class="topic-visual animation-visual" aria-hidden="true">
+          <span>→</span>
+        </div>
+        <h2>CSS Animations</h2>
+        <p>Use keyframes to define how a component changes over time.</p>
+        <p class="practice">Practice: animate a small card without JavaScript.</p>
+        <details>
+          <summary>View example</summary>
+          <pre><code>@keyframes slide {
+  from { transform: translateX(0); }
+  to { transform: translateX(2rem); }
+}
+
+.demo {
+  animation: slide 2s ease-in-out
+    infinite alternate;
+}</code></pre>
+        </details>
+      </article>
+    </section>
+
+    <section class="cta-panel">
+      <div>
+        <p class="eyebrow">Keep learning</p>
+        <h2>Find your next course.</h2>
+        <p>Review the available training options.</p>
+      </div>
+      <a class="button" href="register.html">View courses</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-newsletter">
+      <div>
+        <h2 class="footer-title">Get learning tips and course updates</h2>
+        <p>Short, practical emails. No spam, unsubscribe any time.</p>
+      </div>
+      <form id="newsletter-form" novalidate>
+        <label class="sr-only" for="newsletter-email">Email address</label>
+        <div class="inline-form">
+          <input id="newsletter-email" name="email" type="email"
+                 autocomplete="email" placeholder="you@example.com" required>
+          <input class="honeypot" type="text" name="_gotcha" tabindex="-1"
+                 autocomplete="off" aria-hidden="true">
+          <button class="button" type="submit">Subscribe</button>
+        </div>
+        <p class="form-status" role="status" aria-live="polite" hidden></p>
+      </form>
+    </div>
+    <div class="container footer-inner">
+      <p>© 2026 Cosman Tech Academy</p>
+      <p>
+        <a href="contact.html">Contact</a> ·
+        <a href="privacy.html">Privacy</a> ·
+        Port Harcourt, Nigeria
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script type="module" src="js/site.js"></script>
+</body>
+</html>
